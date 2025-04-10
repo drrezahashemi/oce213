@@ -1,7 +1,7 @@
 # Example script that uses the wave module
 
 # Import the functions
-from wave_module import wave_properties, shallow_water_wavelength, deep_water_wavelength, plot_wave
+from oce213_waves import wave_properties, shallow_water_wavelength, deep_water_wavelength, plot_wave
 
 # --- Input parameters ---
 T = 8.0      # wave period in seconds
