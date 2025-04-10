@@ -14,7 +14,7 @@ print("Angular frequency (omega): %.3f rad/s" % omega)
 print("Amplitude (a): %.2f m" % a)
 
 # --- Compute shallow water wavelength ---
-L_shallow = shallow_water_wavelength(T, h)
+L_shallow,k = shallow_water_wavelength(T, h)
 print("Shallow water wavelength: %.2f m" % L_shallow)
 
 # --- Compute deep water wavelength and wave number ---
@@ -23,4 +23,4 @@ print("Deep water wavelength: %.2f m" % L_deep)
 print("Wave number (k): %.3f 1/m" % k)
 
 # --- Plot the wave using deep water wavelength ---
-plot
+plot_wave(H, L_deep)
